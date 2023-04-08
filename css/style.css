@@ -1,0 +1,180 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.d22 {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-right: 60px solid transparent;
+    border-top: 60px solid #F4B915;
+    border-left: 60px solid #F4B915;
+    border-bottom: 60px solid #F4B915;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    transition: .5s ease;
+}
+
+.mouse_open::after {
+    content: '';
+    display: block;
+    background-color: #F4B915;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 100%;
+    translate: -50% -50% !important;
+}
+
+
+.eyes {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    z-index: 1;
+}
+
+.modal_win {
+    width: 500px;
+    height: 284px;
+    z-index: 4;
+    backdrop-filter: blur(1);
+    display: none;
+    position: absolute;
+    top: 115px;
+    background-color: mediumspringgreen;
+    padding: 20px 0 10px;
+    margin: auto;
+    text-align: center;
+    left: 36%;
+}
+
+h3 {
+    position: absolute;
+    font-size: 50px;
+    cursor: pointer;
+    top: -18px;
+    right: 5px;
+}
+
+.modal_bg {
+    top: 0;
+    z-index: 100;
+    transition: 1s;
+    opacity: 1;
+    display: none;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    height: 100%;
+    background-color: rgba(0, 30, 128, 0.336);
+    margin: 0 auto;
+    position: fixed;
+}
+
+.modal_win h1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.priz h2 {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.modal_bg_two {
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: wheat;
+    position: fixed;
+    display: none;
+    backdrop-filter: blur(4px);
+}
+
+
+.modal_over {
+    width: 500px;
+    height: 350px;
+    z-index: 4;
+    backdrop-filter: blur(10px);
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 34%;
+    padding: 20px 0 10px;
+    background: green;
+}
+
+.modal_over h1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.priz_loser {
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+    height: 400px;
+}
+
+
+.priz_loser img {
+    width: 500px;
+    height: 400px;
+    margin-top: 10px;
+}
+
+.priz_loser h2 {
+    font-size: 40px;
+    color: black;
+}
+
+h5 {
+    position: absolute;
+    font-size: 50px;
+    top: -10px;
+    right: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.food {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+p {
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 45%;
+}
